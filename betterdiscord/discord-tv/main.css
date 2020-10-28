@@ -405,3 +405,11 @@ body, .appMount-3lHmkl, .app-2rEoOp {
 .checkbox-1ix_J3 path[fill*="#7289da"] {
     fill: #9147ff !important;
 }
+
+.children-19S4PO:after {
+    background: none !important;
+}
+
+#MemberCount {
+    background-color: transparent !important;
+}

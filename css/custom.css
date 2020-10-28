@@ -4,8 +4,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.carousel-control-prev,
-.carousel-control-next,
-.carousel-indicators {
+#main-carousel .carousel-control-prev,
+#main-carousel .carousel-control-next,
+#main-carousel .carousel-indicators {
     filter: invert(100%);
 }
