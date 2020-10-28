@@ -1,0 +1,407 @@
+@import url("https://userMacieG.github.io/betterdiscord/supporters.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --bd-blue: #9147ff;
+    --bd-blue-hover: #772ce8;
+    --bd-blue-active: #772ce8;
+    --blurple: #9147ff;
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #72767d;
+    --text-link: #a970ff;
+    --channels-default: #adadb8;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: #0e0e10;
+    --background-secondary: #1f1f23;
+    --background-secondary-alt: #1f1f23;
+    --background-tertiary: #18181b;
+    --background-accent: #4f545c;
+    --background-floating: #18181b;
+    --background-mobile-primary: #36393f;
+    --background-mobile-secondary: #2f3136;
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: #26262c;
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+    --background-mentioned: rgba(255, 0, 0, 0.3);
+    --background-mentioned-hover: rgba(255, 0, 0, 0.3);
+    --background-message-hover: rgba(4,4,5,0.07);
+    --background-help-warning: rgba(250,166,26,0.1);
+    --background-help-info: rgba(0,176,244,0.1);
+    --scrollbar-thin-thumb: transparent;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: transparent;
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: transparent;
+    --scrollbar-auto-scrollbar-color-track: transparent;
+    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high: 0 6px 16px rgba(0, 0, 0, .5), 0 0 4px rgba(0, 0, 0, .4);
+    --logo-primary: #fff;
+    --focus-primary: #00b0f4;
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background: #3e3e40;
+    --activity-card-background: #202225;
+    --textbox-markdown-syntax: #8e9297;
+    --deprecated-card-bg: rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+    --deprecated-store-bg: #36393f;
+    --deprecated-quickswitcher-input-background: #72767d;
+    --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+    --deprecated-text-input-bg: rgba(0,0,0,0.1);
+    --deprecated-text-input-border: rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
+}
+
+body, button, input, select, textarea, ::placeholder {
+    font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body, .appMount-3lHmkl, .app-2rEoOp {
+    background-color: var(--background-primary);
+}
+
+.typeWindows-1za-n7 {
+    background-color: var(--background-primary);
+}
+
+.scrollableContainer-2NUZem {
+    border: 2px solid transparent;
+	border-radius: .4rem;
+}
+
+.input-cIJ7To, .scrollableContainer-2NUZem {
+	background-color: #000;
+    border: 2px solid #a970ff;
+    outline: none;
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+    background-color: #9147ff;
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: #9147ff;
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: #772ce8;
+}
+
+.lookOutlined-3sRXeN.colorBrand-3pXr91 {
+    color: #9147ff;
+    border-color: #9147ff;
+}
+
+.lookOutlined-3sRXeN.colorBrand-3pXr91:hover {
+    color: #772ce8;
+    border-color: #772ce8;
+}
+
+.lookOutlined-3sRXeN.colorRed-1TFJan {
+    color: #e91916;
+    border-color: #e91916;
+}
+
+.lookOutlined-3sRXeN.colorRed-1TFJan:hover {
+    color: #bb1411;
+    border-color: #bb1411;
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: #00e6cb;
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+    background-color: #00ad96;
+}
+
+.unreadPill-2HyYtt {
+    background-color: #e91916;
+}
+
+.unreadPillCapStroke-7rkHbg {
+    color: #e91916;
+    fill: #e91916;
+}
+
+.isUnread-3Ef-o9 {
+    border-color: #e91916;
+}
+
+.wrapper-3WhCwL, .wrapper-3WhCwL:hover {
+	border-radius: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #fff;
+    background: transparent;
+}
+
+.userSettingsSecurity-2WQWqX .isEnabled-1uQQER {
+    color: #00e6cb;
+}
+
+.container-3auIfb[style*="background-color: rgb("] {
+    background-color: #9147ff !important;
+}
+
+.slider-TkfMQL path[fill*="rgba("] {
+    fill: #9147ff !important;
+}
+
+.container-3auIfb[style*="background-color: rgb(114"] {
+    background-color: #3e3e40 !important;
+}
+
+.slider-TkfMQL path[fill*="rgba(1"] {
+    fill: #3e3e40 !important;
+}
+
+.sidebarRegion-VFTUkN {
+    flex: none;
+}
+
+.contentRegion-3nDuYy {
+    flex: 1 1 0;
+}
+
+.contentColumn-2hrIYH, .customColumn-Rb6toI {
+    max-width: 100%;
+}
+
+.containerDefault-3GGEv_, .containerDragAfter-3TEhpe, .containerDragBefore-3Dzc5x, .containerUserOver-1Tcb7l {
+    margin: .5rem 6px;
+}
+
+.newMessagesBar-265mhP {
+    background-color: #9147ff;
+}
+
+.wrapper-1ucjTd {
+    height: 42px;
+}
+
+.content-3at_AU {
+    height: 42px;
+    margin-left: 0;
+    border-radius: 0;
+}
+
+.mentioned-xhSam7:before {
+    background-color: transparent;
+}
+
+.mentioned-xhSam7 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.attachButton-2WznTc {
+    padding: 10px 10px;
+}
+
+.scroller-2wx7Hm {
+	padding-right: 0 !important;
+    border-right: 1px solid #303032;
+}
+
+.scroller-2wx7Hm::-webkit-scrollbar {
+	width: 0;
+}
+
+.barBase-1c2Rfb {
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    min-height: 32px;
+}
+
+.userPopout-3XzG_A {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .4), 0 0 4px rgba(0, 0, 0, .4);
+}
+
+.body-3iLsc4, .footer-1fjuF6 {
+    background-color: #18181b !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .9), 0 0 2px rgba(0, 0, 0, .9)!important;
+}
+
+.headerNormal-T_seeN {
+    background-color: #18181b !important;
+}
+
+.footer-1fjuF6 {
+    padding: 16px;
+}
+
+.role-2irmRk {
+    border-radius: .4rem;
+}
+
+.membersWrap-2h-GB4 {
+    border-left: 1px solid #303032;
+}
+
+.container-1r6BKw.themed-ANHk51 {
+    background: #18181b;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .9), 0 0 2px rgba(0, 0, 0, .9);
+}
+
+.header-2o-2hj {
+    background-color: #18181b;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .9), 0 0 2px rgba(0, 0, 0, .9);
+}
+
+.panels-j1Uci_ {
+    border: 1px solid #303032;
+    border-left: none;
+}
+
+.barFill-23-gu- {
+    background: #9147ff;
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j {
+    background-color: #9147ff;
+}
+
+.colorDanger-2qLCe1, .colorDanger-2qLCe1 .checkbox-3s5GYZ, .colorDanger-2qLCe1 .radioSelection-1HmrQS {
+    color: #e91916;
+}
+
+.colorDanger-2qLCe1.focused-3afm-j {
+    background-color: #e91916;
+}
+
+.unread-1xRYoj {
+    opacity: 1;
+}
+
+.container-35XQWE {
+    padding: 0;
+    height: auto;
+}
+
+.bar-30k2ka {
+    height: auto;
+    border-radius: 0;
+    padding: 8px;
+}
+
+.unreadMentionsIndicatorTop-gA6RCh, .unreadMentionsIndicatorBottom-BXS58x {
+    padding: 0;
+    height: auto;
+}
+
+.mention-1f5kbO {
+    background-color: #e91916;
+    opacity: 1;
+}
+
+.scroller-2TZvBN {
+    background-color: var(--background-primary);
+}
+
+.numberBadge-2s8kKX {
+    background-color: #e91916 !important;
+}
+
+.circleIconButton-jET_ig {
+    color: #8c45f4;
+}
+
+.circleIconButton-jET_ig.selected-ugP_am {
+    background-color: #8c45f4;
+}
+
+.title-3BE6m5[style*="color: rgb(67"] {
+    color: #00e6cb !important;
+}
+
+.item-26Dhrx[style*="background-color: rgb(67"] {
+    border-color: #00e6cb !important;
+    background-color: #00e6cb !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: rgb(67"] {
+    border-color: #00e6cb !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#43b581"] {
+    fill: #00e6cb !important;
+}
+
+.title-3BE6m5[style*="color: rgb(250"] {
+    color: #ffca61 !important;
+}
+
+.item-26Dhrx[style*="background-color: rgb(250"] {
+    border-color: #ffca61 !important;
+    background-color: #ffca61 !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: rgb(250"] {
+    border-color: #ffca61 !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#faa61a"] {
+    fill: #ffca61 !important;
+}
+
+.title-3BE6m5[style*="color: rgb(240"] {
+    color: #e91916 !important;
+}
+
+.item-26Dhrx[style*="background-color: rgb(240"] {
+    border-color: #e91916 !important;
+    background-color: #e91916 !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: rgb(240"] {
+    border-color: #e91916 !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#f04747"] {
+    fill: #e91916 !important;
+}
+
+.item-PXvHYJ[style*="color: rgb(114"] {
+    color: #9147ff !important;
+}
+
+.item-PXvHYJ[style*="background-color: rgba(114"] {
+    background-color: rgba(145, 71, 255, .1) !important;
+}
+
+.item-PXvHYJ[style*="color: rgb(240"] {
+    color: #e91916 !important;
+}
+
+.item-PXvHYJ[style*="background-color: rgba(240"] {
+    background-color: rgba(233, 25, 22, .1) !important;
+}
+
+.item-PXvHYJ[style*="background-color: rgb(114"] {
+    color: #fff !important;
+    background-color: #9147ff !important;
+}
+
+.cardPrimaryEditable-3KtE4g[style*="background-color: rgb(114"] {
+    background-color: #9147ff !important;
+    border-color: #9147ff !important;
+}
+
+.checkbox-1ix_J3[style*="border-color: rgb(114"] {
+    border-color: #9147ff !important;
+}
+
+.checkbox-1ix_J3 path[fill*="#7289da"] {
+    fill: #9147ff !important;
+}
