@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	background-color: #060708;
 }
 
 #main-carousel .carousel-control-prev,
 #main-carousel .carousel-control-next,
 #main-carousel .carousel-indicators {
-    filter: invert(100%);
+	filter: invert(100%);
+}
+
+.bg-dark {
+	background-color: #010202 !important;
+}
+
+.text-muted {
+    color: #505965 !important;
 }
