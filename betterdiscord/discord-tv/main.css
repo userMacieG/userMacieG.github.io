@@ -1199,13 +1199,11 @@ div[id*="folder-items"] {
 	color: var(--color-green) !important;
 }
 
-.panels-j1Uci_ {
-    right: 0;
+.container-3baos1 {
+	right: 0;
     top: 0;
     position: fixed;
     z-index: 101;
-    background-color: transparent;
-	border: none;
 }
 
 .title-3qD0b- {
