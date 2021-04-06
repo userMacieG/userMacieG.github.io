@@ -2,8 +2,8 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
-	background-color: #060708;
+	color: #e6ebf1;
+	background-color: #151f29;
 }
 
 #main-carousel .carousel-control-prev,
@@ -13,9 +13,13 @@ body {
 }
 
 .bg-dark {
-	background-color: #010202 !important;
+	background-color: #0d1319 !important;
 }
 
 .text-muted {
-    color: #505965 !important;
+    color: #586f86 !important;
+}
+
+.text-white {
+    color: #e6ebf1 !important;
 }

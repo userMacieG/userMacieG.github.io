@@ -83,10 +83,10 @@
 
 /* BetterDiscord*/
 :root {
-	--bd-blue: #9147ff;
-	--bd-blue-hover: #772ce8;
-	--bd-blue-active: #772ce8;
-	--blurple: #9147ff;
+	--bd-blue: var(--color-brand);
+	--bd-blue-hover: var(--color-brand-darker);
+	--bd-blue-active: var(--color-brand-darker);
+	--blurple: var(--color-brand);
 }
 
 /* SendAudio*/
@@ -114,7 +114,11 @@
 
 /* ??? */
 :root {
-	--bdfdb-blurple: rgb(114, 137, 218);
+	--bdfdb-blurple: var(--color-brand);
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 /* Discord: Other */
@@ -694,11 +698,6 @@ body,
 	border-left: 1px solid #303032;
 }
 
-.scroller-2LSbBU::-webkit-scrollbar,
-.scroller-2wx7Hm::-webkit-scrollbar {
-	width: 0;
-}
-
 .searchBar-6Kv8R2 {
 	background-color: var(--background-tertiary);
 	box-shadow: var(--shadow-bottom);
@@ -772,9 +771,14 @@ body,
 .container-1r6BKw.themed-ANHk51 {
 	background: var(--background-tertiary);
 	box-shadow: var(--shadow-bottom);
+	padding-right: 220px;
 }
 
-.header-2o-2hj {
+.container-1taM1r {
+	background: var(--background-tertiary) !important;
+}
+
+.header-2V-4Sw {
 	background-color: var(--background-tertiary);
 	box-shadow: var(--shadow-bottom);
 }
@@ -826,7 +830,7 @@ body,
 }
 
 .unreadMentionsIndicatorTop-2-tcdU,
-.unreadMentionsIndicatorBottom-BXS58x {
+.unreadMentionsIndicatorBottom-2mDYbI {
 	padding: 0;
 	height: auto;
 	width: 50px;
@@ -943,6 +947,16 @@ body,
 	background: none !important;
 }
 
+.tabBar-ZmDY9v .item-3HknzM[style*="color: rgb(67"],
+.tabBar-ZmDY9v .item-3HknzM[style*="background-color: rgb(67"] {
+	background-color: var(--color-green) !important;
+	color: rgb(255, 255, 255) !important;
+	border-radius: 0;
+	border-bottom: 2px solid transparent;
+	height: 100%;
+	margin: 0;
+}
+
 .sidebar-CFHs9e {
 	width: 300px;
 	padding: 20px;
@@ -1044,10 +1058,6 @@ div[id*="folder-items"] {
 	border-left: 1px solid #303032;
 }
 
-.base-3dtUhz {
-	left: 50px;
-}
-
 .bg-h5JY_x {
 	top: -30px;
 }
@@ -1091,6 +1101,7 @@ div[id*="folder-items"] {
 	background-color: var(--background-primary);
 	padding: 0 !important;
 	contain: none;
+	margin-top: 50px;
 }
 
 .wrapper-2aW0bm {
@@ -1098,14 +1109,15 @@ div[id*="folder-items"] {
 }
 
 .container-1r6BKw,
-.header-2o-2hj,
+.header-2V-4Sw,
 .searchBar-6Kv8R2 {
 	height: 50px;
 }
 
-.tutorialContainer-1v44GL {
+.tutorialContainer-2sGCg9 {
 	height: 50px;
 	width: 50px;
+	margin-top: -50px;
 	position: fixed;
 	z-index: 2;
 	display: flex;
@@ -1114,29 +1126,34 @@ div[id*="folder-items"] {
 	box-shadow: var(--shadow-bottom);
 }
 
-.tutorialContainer-1v44GL .wrapper-sa6paO {
+.tutorialContainer-2sGCg9 .wrapper-sa6paO {
 	display: none;
 }
 
-.tutorialContainer-1v44GL .wrapper-25eVIn,
-.tutorialContainer-1v44GL .wrapper-25eVIn svg {
+.tutorialContainer-2sGCg9 .wrapper-25eVIn,
+.tutorialContainer-2sGCg9 .wrapper-25eVIn svg {
 	width: 40px;
 	height: 40px;
 }
 
-.tutorialContainer-1v44GL .wrapper-1BJsBx {
+.tutorialContainer-2sGCg9 .wrapper-1BJsBx {
 	width: 100%;
 	height: 100%;
 	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' overflow='visible' width='40px' height='40px' version='1.1' viewBox='0 0 40 40' x='0px' y='0px'%3E%3Cpolygon xmlns='http://www.w3.org/2000/svg' points='13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8' fill='%239147ff'/%3E%3Cpolygon xmlns='http://www.w3.org/2000/svg' points='26 25 30 21 30 10 14 10 14 25 18 25 18 29 22 25' fill='%23fff'/%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='M20,14 L22,14 L22,20 L20,20 L20,14 Z M27,14 L27,20 L25,20 L25,14 L27,14 Z' fill='%239147ff'/%3E%3C/svg%3E") center/contain no-repeat;
 }
 
-.tutorialContainer-1v44GL .listItem-2P_4kh {
+.tutorialContainer-2sGCg9 .listItem-2P_4kh {
 	padding: 0;
 	width: 100%;
 }
 
-.tutorialContainer-1v44GL .childWrapper-anI2G9 {
+.tutorialContainer-2sGCg9 .childWrapper-anI2G9 {
 	display: none;
+}
+
+.guildSeparator-33mFX6 {
+	height: 0;
+	border-radius: 0;
 }
 
 .wrapper-1Rf91z {
@@ -1180,6 +1197,39 @@ div[id*="folder-items"] {
 
 .block-2RXqH9 .pro-1T8RK7[style*="color: rgb(67"] {
 	color: var(--color-green) !important;
+}
+
+.panels-j1Uci_ {
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 101;
+    background-color: transparent;
+	border: none;
+}
+
+.title-3qD0b- {
+    z-index: 0;
+}
+
+.tipTitle-GL9qAt {
+	color: var(--color-brand);
+}
+
+.channel-2QD9_O {
+    position: relative;
+    max-width: 100%;
+    margin-left: 0;
+}
+
+.container-2Pjhx- {
+    padding: 0;
+    border-radius: 0;
+}
+
+.layout-2DM8Md {
+	border-radius: 0;
+    height: 50px;
 }
 
 /* USRBG && Supporters */
