@@ -234,9 +234,10 @@ body,
 /* Discord: Chat: Form */
 .input-cIJ7To,
 .scrollableContainer-2NUZem {
-	border-color: transparent;
 	background-color: #3e3e40;
 	transition: background-color 0.2s ease, border-color 0.2s ease;
+	border: 2px solid transparent;
+	outline: none;
 }
 
 .input-cIJ7To:hover,
@@ -249,6 +250,10 @@ body,
 .scrollableContainer-2NUZem:focus-within {
 	background-color: #000;
 	border-color: #a970ff;
+}
+
+.noBorder-CTIBpT {
+	border: none !important;
 }
 
 /* Discord: Search: Form */
@@ -334,6 +339,17 @@ body,
 
 .button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp:hover {
 	background-color: var(--color-green-darker);
+}
+
+/* Button: Outlined - Green */
+.lookOutlined-3sRXeN.colorGreen-29iAKY {
+	color: var(--color-green);
+	border-color: var(--color-green);
+}
+
+.lookOutlined-3sRXeN.colorGreen-29iAKY:hover {
+	color: var(--color-green-darker);
+	border-color: var(--color-green-darker);
 }
 
 /* Discord: Tooltip */
@@ -594,13 +610,6 @@ body,
 	border-radius: .4rem;
 }
 
-.input-cIJ7To,
-.scrollableContainer-2NUZem {
-	background-color: #000;
-	border: 2px solid #a970ff;
-	outline: none;
-}
-
 .wrapper-1BJsBx.selected-bZ3Lue
 .childWrapper-anI2G9,
 .wrapper-1BJsBx:hover
@@ -706,6 +715,7 @@ body,
 .scroller-1JbKMe {
 	border-right: 1px solid #303032;
 	border-left: 1px solid #303032;
+	margin-top: -8px;
 }
 
 .barBase-1c2Rfb {
@@ -771,7 +781,8 @@ body,
 .container-1r6BKw.themed-ANHk51 {
 	background: var(--background-tertiary);
 	box-shadow: var(--shadow-bottom);
-	padding-right: 220px;
+	padding-right: 238px;
+	z-index: 0;
 }
 
 .container-1taM1r {
@@ -965,13 +976,6 @@ body,
 .side-8zPYf6 .header-2RyJ0Y,
 .side-8zPYf6 .item-PXvHYJ {
 	padding: 10px;
-}
-
-.input-cIJ7To,
-.scrollableContainer-2NUZem {
-	border-color: transparent;
-	background-color: #3e3e40;
-	transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .input-cIJ7To:hover,
@@ -1201,37 +1205,117 @@ div[id*="folder-items"] {
 
 .container-3baos1 {
 	right: 0;
-    top: 0;
-    position: fixed;
-    z-index: 101;
-}
-
-.title-3qD0b- {
-    z-index: 0;
+	top: 0;
+	position: absolute;
+	z-index: 101;
+	width: 220px;
 }
 
 .tipTitle-GL9qAt {
 	color: var(--color-brand);
 }
 
+.colorBrand-ROmMP1 {
+	color: var(--color-brand);
+}
+
+.circleIconButton-1QV--U {
+	color: var(--color-green);
+}
+
+.circleIconButton-1QV--U.selected-1JjBPm {
+	background-color: var(--color-green);
+}
+
+.iconBadge-3qSJIw.participating-1NvRVd {
+	background-color: var(--color-green);
+}
+
+.member-3-YXUe {
+	max-width: none;
+	margin-left: 0;
+}
+
 .channel-2QD9_O {
-    position: relative;
-    max-width: 100%;
-    margin-left: 0;
+	position: relative;
+	max-width: 100%;
+	margin-left: 0;
 }
 
 .container-2Pjhx- {
-    padding: 0;
-    border-radius: 0;
+	padding: 0;
+	border-radius: 0;
 }
 
 .layout-2DM8Md {
 	border-radius: 0;
-    height: 50px;
+	height: 50px;
+}
+
+.inviteRow-2L02ae {
+	margin-right: 0;
+}
+
+.webkit-HjD9Er .buttons-3JBrkn {
+	margin-right: 4px;
+}
+
+.scroller-2hZ97C {
+	padding-left: 0;
+}
+
+.list-2luk8a {
+	padding-left: 0;
+}
+
+.scroller-RmtA4e {
+	padding-right: 0 !important;
+}
+
+.content-1x5b-n {
+	margin-left: 0;
+	border-radius: 0;
+}
+
+.topSectionPlaying-1J5E4n {
+	background-color: var(--color-brand);
+}
+
+.strikethrough-1n4ekb {
+    color: var(--color-red);
+}
+
+/* BetterDiscord */
+.bd-addon-views .bd-view-button.selected {
+	background-color: var(--color-brand);
+}
+
+.bd-switch-checked {
+	background-color: var(--color-brand);
+}
+
+.bd-button {
+	background-color: var(--color-brand);
+}
+
+.bd-button:hover,
+.bd-button:active,
+.bd-button:focus {
+	background-color: var(--color-brand-darker);
+}
+
+.bd-button.bd-button-danger {
+	background-color: var(--color-red);
+}
+
+.bd-button.bd-button-danger:hover,
+.bd-button.bd-button-danger:active,
+.bd-button.bd-button-danger:focus {
+	background-color: var(--color-red-darker);
 }
 
 /* USRBG && Supporters */
-.topSectionNormal-2-vo2m {
+.header-QKLPzZ {
 	background: var(--user-background) center/cover no-repeat;
 }
 
@@ -1239,5 +1323,10 @@ div[id*="folder-items"] {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: var(--user-popout-position) center;
-	background-image: var(--user-background);
+	background: var(--user-background);
+}
+
+/* Plugins */
+#MemberCount {
+	margin-top: 0px !important;
 }

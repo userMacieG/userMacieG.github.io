@@ -9,3 +9,9 @@
 [data-user-id*="427853225593667595"] {
 	--user-background: linear-gradient(37deg, rgba(29,119,235,1) 0%, rgba(171,49,241,1) 50%, rgba(255,180,49,1) 100%);
 }
+
+/* Polski#6314 */
+[user_by_bdfdb*="419508419582492672"],
+[data-user-id*="419508419582492672"] {
+	--user-background: #00d3ff;
+}
