@@ -25,7 +25,8 @@
 	--user-background: var(--color-brand);
 }
 
-/* Discord*/
+/* Discord */
+.theme-dark,
 :root {
 	--header-primary: #fff;
 	--header-secondary: #b9bbbe;
@@ -83,7 +84,7 @@
 	--deprecated-text-input-prefix: #dcddde;
 }
 
-/* BetterDiscord*/
+/* BetterDiscord */
 :root {
 	--bd-blue: var(--color-brand);
 	--bd-blue-hover: var(--color-brand-darker);
@@ -91,7 +92,7 @@
 	--blurple: var(--color-brand);
 }
 
-/* SendAudio*/
+/* SendAudio */
 :root {
 	--sendaudio-record: var(--interactive-normal);
 	--sendaudio-record-hover: var(--interactive-active);
@@ -107,7 +108,7 @@
 	--sendaudio-send-hover: var(--interactive-active);
 }
 
-/* ChannelTabs*/
+/* ChannelTabs */
 :root {
 	--channelTabs-tabWidth: 190px;
 	--channelTabs-tabHeight: 20px;
@@ -123,7 +124,7 @@
 	display: none;
 }
 
-/* Discord: Other */
+/* Discord */
 body,
 button,
 input,
@@ -390,68 +391,7 @@ body,
 	color: var(--color-green);
 }
 
-/* BetterDiscord: Public Server List: Button */
-#bd-pub-li {
-	height: 20px;
-	margin-bottom: 6px;
-	margin-top: 58px;
-	padding: 0;
-}
-
-/* BetterDiscord: Settings: Tab Item */
-#bd-settings-sidebar .ui-tab-bar-item {
-	padding: 10px;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item.selected {
-	background-color: var(--background-modifier-selected);
-}
-
-/* BetterDiscord: Settings: Theme & plugin repos - Search form */
-.inner-2P4tQO {
-	border-width: 2px;
-	border-style: solid;
-	border-color: transparent;
-	background-color: #3e3e40;
-	transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.inner-2P4tQO:hover {
-	border-color: #575758;
-	background-color: #3e3e40;
-}
-
-.inner-2P4tQO:focus-within {
-	background-color: #000;
-	border-color: var(--color-brand-lighter);
-}
-
-/* BetterDiscord: Settings: Theme & plugin repos - Tab */
-.tabBarContainer-1s1u-z {
-	max-width: none;
-	padding: 0 !important;
-	margin: 0 40px;
-}
-
-.top-28JiJ- .item-PXvHYJ {
-	border-bottom: 1px solid transparent;
-}
-
-.tabBar-2MuP6- {
-	height: 30px;
-}
-
-.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,
-.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active {
-	border-bottom-color: var(--color-brand);
-	color: var(--color-brand);
-}
-
-.tabBarItem-1b8RUP {
-	margin-right: 20px;
-}
-
-/* ... */
+/* Discord: Other */
 .cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
 	font-size: 10px;
 	margin: 0;
@@ -1311,12 +1251,33 @@ div[id*="folder-items"] {
 }
 
 .notice-3bPHh- {
-	width: 100%;
+	width: calc(100% - 50px);
 	margin-top: 50px;
 	position: fixed;
 	padding-left: 0;
 	padding-right: 0;
 	border-radius: 0;
+}
+
+.root-2CDANf {
+    margin-top: 50px;
+    height: calc(100% - 50px);
+}
+
+.root-217Brm.idle-1j3olu .topControls-KKImPZ {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.headerWrapper-3NUKsd {
+    padding-right: 230px;
+    background-color: var(--background-tertiary);
+}
+
+.wrapper-2qzCYF {
+    z-index: 0;
+    background-color: var(--background-primary);
 }
 
 .live-vBWnV6[style*="background-color: rgb("] {
@@ -1327,7 +1288,7 @@ div[id*="folder-items"] {
     border-radius: 4px;
 }
 
-/* BetterDiscord */
+/* BetterDiscord: Settings: Buttons and switches */
 .bd-addon-views .bd-view-button.selected,
 .bd-switch-checked,
 .bd-button {
@@ -1350,6 +1311,67 @@ div[id*="folder-items"] {
 	background-color: var(--color-red-darker);
 }
 
+/* BetterDiscord: Public Server List: Button */
+#bd-pub-li {
+	height: 20px;
+	margin-bottom: 6px;
+	margin-top: 58px;
+	padding: 0;
+}
+
+/* BetterDiscord: Settings: Tab Item */
+#bd-settings-sidebar .ui-tab-bar-item {
+	padding: 10px;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item.selected {
+	background-color: var(--background-modifier-selected);
+}
+
+/* BetterDiscord: Settings: Theme & plugin repos - Search form */
+.inner-2P4tQO {
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	background-color: #3e3e40;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.inner-2P4tQO:hover {
+	border-color: #575758;
+	background-color: #3e3e40;
+}
+
+.inner-2P4tQO:focus-within {
+	background-color: #000;
+	border-color: var(--color-brand-lighter);
+}
+
+/* BetterDiscord: Settings: Theme & plugin repos - Tab */
+.tabBarContainer-1s1u-z {
+	max-width: none;
+	padding: 0 !important;
+	margin: 0 40px;
+}
+
+.top-28JiJ- .item-PXvHYJ {
+	border-bottom: 1px solid transparent;
+}
+
+.tabBar-2MuP6- {
+	height: 30px;
+}
+
+.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,
+.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active {
+	border-bottom-color: var(--color-brand);
+	color: var(--color-brand);
+}
+
+.tabBarItem-1b8RUP {
+	margin-right: 20px;
+}
+
 /* USRBG && Supporters */
 .header-QKLPzZ {
 	background: var(--user-background) center/cover no-repeat;
@@ -1362,13 +1384,12 @@ div[id*="folder-items"] {
 	background: var(--user-background);
 }
 
-/* Plugins */
-/* MemberCount */
+/* Plugins: MemberCount */
 #MemberCount {
 	margin-top: 0 !important;
 }
 
-/* Channel Tabs */
+/* Plugins: Channel Tabs */
 .channelTabs-tab,
 .channelTabs-fav {
 	margin: 0 !important;
