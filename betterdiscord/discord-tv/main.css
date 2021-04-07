@@ -22,6 +22,7 @@
 	--color-gray-darker: #4f545c;
 	--shadow: 0 4px 8px rgba(0, 0, 0,.4), 0 0 4px rgba(0, 0, 0, .4);
 	--shadow-bottom: 0 1px 2px rgba(0, 0, 0, .9), 0 0 2px rgba(0, 0, 0, .9);
+	--user-background: var(--color-brand);
 }
 
 /* Discord*/
@@ -1370,17 +1371,16 @@ div[id*="folder-items"] {
 /* Channel Tabs */
 .channelTabs-tab,
 .channelTabs-fav {
-	margin: 0;
-	border-radius: 0;
-	font-size: calc(var(--channelTabs-tabHeight) - 6px);
-	height: unset;
+	margin: 0 !important;
+	border-radius: 0 !important;
+	font-size: calc(var(--channelTabs-tabHeight) - 6px) !important;
+	height: unset !important;
 }
 
 .channelTabs-tabContainer,
 .channelTabs-favContainer {
-    min-height: unset;
+    min-height: unset !important;
 }
-
 
 .channelTabs-tab.channelTabs-selected {
     border-bottom: 2px solid var(--color-brand-lighter);
