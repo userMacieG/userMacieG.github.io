@@ -1318,6 +1318,14 @@ div[id*="folder-items"] {
 	border-radius: 0;
 }
 
+.live-vBWnV6[style*="background-color: rgb("] {
+	background-color: var(--color-red);
+}
+
+.liveShapeRound-32u79- {
+    border-radius: 4px;
+}
+
 /* BetterDiscord */
 .bd-addon-views .bd-view-button.selected,
 .bd-switch-checked,
@@ -1354,6 +1362,30 @@ div[id*="folder-items"] {
 }
 
 /* Plugins */
+/* MemberCount */
 #MemberCount {
 	margin-top: 0 !important;
+}
+
+/* Channel Tabs */
+.channelTabs-tab,
+.channelTabs-fav {
+	margin: 0;
+	border-radius: 0;
+	font-size: calc(var(--channelTabs-tabHeight) - 6px);
+	height: unset;
+}
+
+.channelTabs-tabContainer,
+.channelTabs-favContainer {
+    min-height: unset;
+}
+
+
+.channelTabs-tab.channelTabs-selected {
+    border-bottom: 2px solid var(--color-brand-lighter);
+}
+
+.channelTabs-fav.channelTabs-selected {
+    border-bottom: 2px solid var(--color-brand);
 }
