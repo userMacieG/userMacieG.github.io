@@ -549,16 +549,16 @@ body,
 }
 
 .unreadPill-2HyYtt {
-    background-color: var(--background-primary);
-    color: #ff8280;
-    padding: 0 0 0 10px;
-    border-radius: 0;
-    font-size: 11px;
-    font-weight: normal;
+	background-color: var(--background-primary);
+	color: #ff8280;
+	padding: 0 0 0 10px;
+	border-radius: 0;
+	font-size: 11px;
+	font-weight: normal;
 }
 
 .unreadPillCap-3_K2q2 {
-    display: none;
+	display: none;
 }
 
 .unreadPillCapStroke-7rkHbg {
@@ -567,7 +567,7 @@ body,
 }
 
 .isUnread-3Ef-o9 {
-    border-color: #ff8280;
+	border-color: #ff8280;
 }
 
 .wrapper-3WhCwL,
@@ -731,8 +731,8 @@ body,
 }
 
 .panels-j1Uci_ {
-	border: 1px solid #303032;
-	border-bottom: none;
+	border: none;
+	border-top: 1px solid #303032;
 }
 
 .barFill-23-gu- {
@@ -1202,6 +1202,21 @@ div[id*="folder-items"] {
 
 .list-2luk8a {
 	padding-left: 0;
+	padding-bottom: 0;
+}
+
+.content-1Wq3SX {
+	margin: 0;
+	border-radius: 0;
+	padding: 4px 0;
+}
+
+.draggable-2E_4tJ {
+	height: auto;
+}
+
+.userSmall-YJ5L9_ {
+	height: auto;
 }
 
 .scroller-RmtA4e {
@@ -1265,24 +1280,24 @@ div[id*="folder-items"] {
 }
 
 .root-2CDANf {
-    margin-top: 50px;
-    height: calc(100% - 50px);
+	margin-top: 50px;
+	height: calc(100% - 50px);
 }
 
 .root-217Brm.idle-1j3olu .topControls-KKImPZ {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
 }
 
 .headerWrapper-3NUKsd {
-    padding-right: 230px;
-    background-color: var(--background-tertiary);
+	padding-right: 230px;
+	background-color: var(--background-tertiary);
 }
 
 .wrapper-2qzCYF {
-    z-index: 0;
-    background-color: var(--background-primary);
+	z-index: 0;
+	background-color: var(--background-primary);
 }
 
 .live-vBWnV6[style*="background-color: rgb("] {
@@ -1290,23 +1305,23 @@ div[id*="folder-items"] {
 }
 
 .liveShapeRound-32u79- {
-    border-radius: 4px;
+	border-radius: 4px;
 }
 
 .bodyInnerWrapper-Z8WDxe {
-    padding-right: 15px;
+	padding-right: 15px;
 }
 
 .body-3iLsc4 {
-    padding: 16px 8px 16px 16px !important;
+	padding: 16px 8px 16px 16px !important;
 }
 
 .scroller-3BxosC {
-    padding: 6px 8px !important;
+	padding: 6px 8px !important;
 }
 
 .lookInverted-2D7oAl.colorBrand-3pXr91 {
-    color: var(--color-brand);
+	color: var(--color-brand);
 }
 
 /* BetterDiscord: Settings: Buttons and switches */
@@ -1412,8 +1427,8 @@ div[id*="folder-items"] {
 }
 
 #MemberCount .membersGroup-v9BXpm {
-    padding: 12px 8px;
-    height: auto;
+	padding: 12px 8px;
+	height: auto;
 }
 
 /* Plugins: Channel Tabs */
@@ -1427,13 +1442,13 @@ div[id*="folder-items"] {
 
 .channelTabs-tabContainer,
 .channelTabs-favContainer {
-    min-height: unset !important;
+	min-height: unset !important;
 }
 
 .channelTabs-tab.channelTabs-selected {
-    border-bottom: 2px solid var(--color-brand-lighter);
+	border-bottom: 2px solid var(--color-brand-lighter);
 }
 
 .channelTabs-fav.channelTabs-selected {
-    border-bottom: 2px solid var(--color-brand);
+	border-bottom: 2px solid var(--color-brand);
 }
