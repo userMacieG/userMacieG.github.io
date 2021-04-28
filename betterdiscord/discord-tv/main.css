@@ -1,9 +1,7 @@
 /* USRBG */
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
-
 /* SUPPORTERS */
 @import url('https://userMacieG.github.io/betterdiscord/supporters.css');
-
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
 
@@ -16,13 +14,19 @@
 	--color-red-darker: #bb1411;
 	--color-orange: #ffca61;
 	--color-orange-darker: #fcc439;
+	--background-orange: rgba(255, 165, 0, 0.10);
 	--color-green: #00e6cb;
 	--color-green-darker: #00ad96;
 	--color-gray: #72767d;
 	--color-gray-darker: #4f545c;
-	--shadow: 0 4px 8px rgba(0, 0, 0,.4), 0 0 4px rgba(0, 0, 0, .4);
+	--shadow: 0 4px 8px rgba(0, 0, 0, .4), 0 0 4px rgba(0, 0, 0, .4);
 	--shadow-bottom: 0 1px 2px rgba(0, 0, 0, .9), 0 0 2px rgba(0, 0, 0, .9);
 	--user-background: #18181b;
+}
+
+/* ??? */
+:root {
+	--bdfdb-blurple: var(--color-brand);
 }
 
 /* Discord */
@@ -46,85 +50,48 @@
 	--background-floating: #18191c;
 	--background-mobile-primary: #36393f;
 	--background-mobile-secondary: #2f3136;
-	--background-modifier-hover: rgba(79,84,92,0.16);
-	--background-modifier-active: rgba(79,84,92,0.24);
-	--background-modifier-selected: rgba(79,84,92,0.32);
-	--background-modifier-accent: hsla(0,0%,100%,0.06);
+	--background-modifier-hover: rgba(79, 84, 92, 0.16);
+	--background-modifier-active: rgba(79, 84, 92, 0.24);
+	--background-modifier-selected: rgba(79, 84, 92, 0.32);
+	--background-modifier-accent: hsla(0, 0%, 100%, 0.06);
 	--background-mentioned: rgba(255, 0, 0, 0.3);
 	--background-mentioned-hover: rgba(255, 116, 116, 0.44);
-	--background-message-hover: rgba(4,4,5,0.07);
-	--background-help-warning: rgba(250,166,26,0.1);
-	--background-help-info: rgba(0,176,244,0.1);
+	--background-message-hover: rgba(4, 4, 5, 0.07);
+	--background-help-warning: rgba(250, 166, 26, 0.1);
+	--background-help-info: rgba(0, 176, 244, 0.1);
 	--scrollbar-thin-thumb: #202225;
 	--scrollbar-thin-track: transparent;
 	--scrollbar-auto-thumb: #202225;
 	--scrollbar-auto-track: #2e3338;
 	--scrollbar-auto-scrollbar-color-thumb: #202225;
 	--scrollbar-auto-scrollbar-color-track: #2f3136;
-	--elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
-	--elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
-	--elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
-	--elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+	--elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
+	--elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+	--elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
+	--elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
 	--logo-primary: #fff;
 	--focus-primary: var(--color-brand);
 	--radio-group-dot-foreground: var(--color-brand-lighter);
-	--guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	--guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 	--channeltextarea-background: #3e3e40;
 	--activity-card-background: #202225;
 	--textbox-markdown-syntax: #8e9297;
-	--deprecated-card-bg: rgba(32,34,37,0.6);
-	--deprecated-card-editable-bg: rgba(32,34,37,0.3);
+	--deprecated-card-bg: rgba(32, 34, 37, 0.6);
+	--deprecated-card-editable-bg: rgba(32, 34, 37, 0.3);
 	--deprecated-store-bg: #36393f;
 	--deprecated-quickswitcher-input-background: var(--color-gray);
-	--deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
-	--deprecated-text-input-bg: rgba(0,0,0,0.1);
-	--deprecated-text-input-border: rgba(0,0,0,0.3);
+	--deprecated-quickswitcher-input-placeholder: hsla(0, 0%, 100%, 0.3);
+	--deprecated-text-input-bg: rgba(0, 0, 0, 0.1);
+	--deprecated-text-input-border: rgba(0, 0, 0, 0.3);
 	--deprecated-text-input-border-hover: #040405;
 	--deprecated-text-input-border-disabled: #202225;
 	--deprecated-text-input-prefix: #dcddde;
-}
-
-/* BetterDiscord */
-:root {
-	--bd-blue: var(--color-brand);
-	--bd-blue-hover: var(--color-brand-darker);
-	--bd-blue-active: var(--color-brand-darker);
-	--blurple: var(--color-brand);
-}
-
-/* SendAudio */
-:root {
-	--sendaudio-record: var(--interactive-normal);
-	--sendaudio-record-hover: var(--interactive-active);
-	--sendaudio-cancel: var(--interactive-normal);
-	--sendaudio-cancel-hover: var(--interactive-active);
-	--sendaudio-pause: var(--interactive-normal);
-	--sendaudio-pause-hover: var(--interactive-active);
-	--sendaudio-play: var(--interactive-normal);
-	--sendaudio-play-hover: var(--interactive-active);
-	--sendaudio-save: var(--interactive-normal);
-	--sendaudio-save-hover: var(--interactive-active);
-	--sendaudio-send: var(--interactive-normal);
-	--sendaudio-send-hover: var(--interactive-active);
-}
-
-/* ChannelTabs */
-:root {
-	--channelTabs-tabWidth: 190px;
-	--channelTabs-tabHeight: 20px;
-	--channelTabs-favHeight: 20px;
-}
-
-/* ??? */
-:root {
-	--bdfdb-blurple: var(--color-brand);
 }
 
 ::-webkit-scrollbar {
 	display: none;
 }
 
-/* Discord */
 body,
 button,
 input,
@@ -184,7 +151,7 @@ body,
 
 /* Discord: Home: Friends - Top pills */
 .children-19S4PO,
-.topPill-30KHOu{
+.topPill-30KHOu {
 	height: 100%;
 }
 
@@ -310,7 +277,7 @@ body,
 }
 
 .lookFilled-1Gx00P.colorRed-1TFJan:hover,
-.lookFilled-1Gx00P.colorRed-1TFJan:active{
+.lookFilled-1Gx00P.colorRed-1TFJan:active {
 	background-color: var(--color-red-darker);
 }
 
@@ -336,7 +303,7 @@ body,
 	background-color: var(--color-green-darker);
 }
 
-/* Button: Outlined - Green */
+/* Discord: Button: Outlined - Green */
 .lookOutlined-3sRXeN.colorGreen-29iAKY {
 	color: var(--color-green);
 	border-color: var(--color-green);
@@ -391,7 +358,150 @@ body,
 	color: var(--color-green);
 }
 
+/*  Discord: Settings: Sidebar */
+.side-8zPYf6 .header-2RyJ0Y:first-child {
+	padding-top: 20px;
+}
+
+.platform-win .standardSidebarView-3F1I7i {
+	top: 30px;
+}
+
+.side-8zPYf6 .item-PXvHYJ {
+	padding: 10px 20px;
+	border-radius: 0;
+}
+
+.side-8zPYf6 .header-2RyJ0Y {
+	padding: 10px 20px;
+}
+
+.side-8zPYf6 .separator-gCa7yv {
+	margin: 10px 20px;
+}
+
+.socialLinks-3jqNFy {
+	padding: 10px 20px 0px 20px;
+}
+
+.info-1VyQPT {
+	padding: 10px 20px 20px 20px;
+}
+
+/* Discord: Settings: Security */
+.userSettingsSecurity-3IYeMF .lockIcon-2Hj8Tq {
+	display: none;
+}
+
+.userSettingsSecurity-3IYeMF .isEnabled-24g9qA {
+	color: var(--color-green);
+}
+
+/* Discord: Settings: Privacy & Safety: Radial */
+.radioBar-bMNUI-[style*="#43b581"] {
+	border-color: var(--color-green);
+}
+
+.radioBar-bMNUI-[style*="#faa61a"] {
+	border-color: var(--color-orange);
+}
+
+.radioBar-bMNUI-[style*="#f04747"] {
+	border-color: var(--color-red);
+}
+
+/* Discord: Settings: Authorized Apps */
+.permissionCheckmark-1SeKr2 {
+	display: none;
+}
+
+/* Discord: Settings: Discord Nitro */
+.theme-dark .featureProfile-tTo0C- .featureTitle-W5O6R1 {
+	color: var(--color-green);
+}
+
+.theme-dark .featureEmoji-3pTtR2 .featureTitle-W5O6R1 {
+	color: var(--color-orange);
+}
+
+.featurePremiumGuild-2KpCr6 .featureTitle-W5O6R1 {
+	color: var(--color-brand);
+}
+
+.theme-dark .featureStickers-Pc_FBx .featureTitle-W5O6R1 {
+	color: var(--color-orange);
+}
+
+.featureStickers-Pc_FBx .badgeNew-16P_X0 {
+	background-color: var(--color-brand);
+}
+
+/* Discord: Settings: Billing */
+.theme-dark .paymentPane-3bwJ6A {
+	background-color: var(--background-secondary);
+	color: var(--text-normal);
+}
+
+.theme-dark .payment-xT17Mq {
+	background-color: var(--background-secondary);
+	color: var(--text-normal);
+}
+
+.theme-dark .paginator-166-09 {
+	background: var(--background-secondary);
+}
+
+.theme-dark .codeRedemptionRedirect-1wVR4b {
+	background-color: var(--background-secondary);
+	color: var(--text-normal);
+	border-color: transparent;
+}
+
+/* Discord: Settings: Keybinds */
+.warning-3C2pOH .icon-1jlFSw {
+	color: var(--color-orange);
+}
+
+.warning-3C2pOH {
+	background: var(--background-orange);
+	border: 1px solid var(--color-orange);
+}
+
 /* Discord: Other */
+.wrapper-3Njo_c ul {
+	height: 100% !important;
+}
+
+.winButtonClose-1HsbF-:hover {
+	background-color: var(--color-red);
+}
+
+.gameVerifiedIcon-2dGGa5 svg path[fill*="#7289da"] {
+	fill: var(--color-brand);
+}
+
+.overlayToggleIconOff-1kT42w .fill-1ugeBG {
+	fill: var(--color-red);
+}
+
+.overlayToggleIconOff-1kT42w rect[fill*="#F04747"] {
+	fill: var(--color-red) !important;
+}
+
+.wrapper-3jrx9n {
+	border-color: var(--color-brand);
+}
+
+.selected-mKYnfr.option-n0icdO {
+	background-color: var(--color-brand);
+	border-color: var(--color-brand);
+}
+
+.option-n0icdO:hover {
+	background-color: var(--color-brand-darker);
+	border-color: var(--color-brand-darker);
+}
+
 .cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
 	font-size: 10px;
 	margin: 0;
@@ -501,7 +611,7 @@ body,
 .jumpToPresentBar-G1R9s6:hover,
 .jumpToPresentBar-G1R9s6:active {
 	background-color: hsla(0, 0%, 100%, .2);
-	box-shadow: 0 0 6px 0 hsla(0,0%,100%,.3);
+	box-shadow: 0 0 6px 0 hsla(0, 0%, 100%, .3);
 }
 
 .username-1A8OIy {
@@ -541,10 +651,8 @@ body,
 	border-radius: .4rem;
 }
 
-.wrapper-1BJsBx.selected-bZ3Lue
-.childWrapper-anI2G9,
-.wrapper-1BJsBx:hover
-.childWrapper-anI2G9 {
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
 	background-color: var(--color-brand);
 }
 
@@ -793,7 +901,12 @@ body,
 	opacity: 1;
 }
 
-.numberBadge-2s8kKX {
+.checkbox-1ix_J3[style*="114"] {
+	border-color: var(--color-brand) !important;
+	background-color: var(--color-brand) !important;
+}
+
+.numberBadge-2s8kKX[style*="240"] {
 	background-color: var(--color-red) !important;
 }
 
@@ -906,12 +1019,7 @@ body,
 
 .sidebar-CFHs9e {
 	width: 300px;
-	padding: 20px;
-}
-
-.side-8zPYf6 .header-2RyJ0Y,
-.side-8zPYf6 .item-PXvHYJ {
-	padding: 10px;
+	padding: 0;
 }
 
 .input-cIJ7To:hover,
@@ -1108,10 +1216,6 @@ div[id*="folder-items"] {
 	margin: 12px 16px;
 }
 
-.channelHeader-3Gd2xq {
-	background-color: transparent;
-}
-
 .colorDefault-2K3EoJ .checkbox-3s5GYZ, .colorDefault-2K3EoJ .radioSelection-1HmrQS,
 .colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN {
 	color: var(--color-brand);
@@ -1124,6 +1228,7 @@ div[id*="folder-items"] {
 .header-ykumBX,
 .messagesPopout-24nkyi {
 	box-shadow: var(--shadow-bottom);
+	padding: 8px 8px 0 8px !important;
 }
 
 .messagesPopoutWrap-1MQ1bW {
@@ -1240,6 +1345,10 @@ div[id*="folder-items"] {
 	background-color: var(--color-green);
 }
 
+.textBadge-1iylP6[style*="240"] {
+	background-color: var(--color-red) !important;
+}
+
 .wrapper-2qzCYF.minimum-28Z35l {
 	z-index: 0;
 }
@@ -1324,9 +1433,47 @@ div[id*="folder-items"] {
 	color: var(--color-brand);
 }
 
+.content-1LAB8Z {
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+}
+
+.scroller-tlc3kG {
+	padding: 0 16px !important;
+}
+
+.container-3iAQ-0 {
+	padding-right: 16px;
+}
+
+.colorStatusGreen-2saF4_ {
+	color: var(--color-green);
+}
+
+.botTagRegular-2HEhHi {
+	background: var(--color-brand);
+}
+
+.channelHeader-3Gd2xq {
+	padding-right: 16px;
+	background-color: var(--background-primary);
+}
+
+.messageContainer-gbhlwo {
+	padding: 16px 10px 16px 0;
+	border-radius: 0;
+}
+
+/* BetterDiscord */
+:root {
+	--bd-blue: var(--color-brand);
+	--bd-blue-hover: var(--color-brand-darker);
+	--bd-blue-active: var(--color-brand-darker);
+	--blurple: var(--color-brand);
+}
+
 /* BetterDiscord: Settings: Buttons and switches */
 .bd-addon-views .bd-view-button.selected,
-.bd-switch-checked,
 .bd-button {
 	background-color: var(--color-brand);
 }
@@ -1345,6 +1492,19 @@ div[id*="folder-items"] {
 .bd-button.bd-button-danger:active,
 .bd-button.bd-button-danger:focus {
 	background-color: var(--color-red-darker);
+}
+
+.bd-switch input:checked+.bd-switch-body {
+	--switch-color: var(--color-green);
+}
+
+.bd-sidebar-header {
+	margin-top: -10px;
+}
+
+.bd-sidebar-header .bd-icon {
+	margin-left: -36px;
+	margin-bottom: -22px;
 }
 
 /* BetterDiscord: Public Server List: Button */
@@ -1432,6 +1592,12 @@ div[id*="folder-items"] {
 }
 
 /* Plugins: Channel Tabs */
+:root {
+	--channelTabs-tabWidth: 190px;
+	--channelTabs-tabHeight: 20px;
+	--channelTabs-favHeight: 20px;
+}
+
 .channelTabs-tab,
 .channelTabs-fav {
 	margin: 0 !important;
@@ -1451,4 +1617,20 @@ div[id*="folder-items"] {
 
 .channelTabs-fav.channelTabs-selected {
 	border-bottom: 2px solid var(--color-brand);
+}
+
+/* Plugins: SendAudio */
+:root {
+	--sendaudio-record: var(--interactive-normal);
+	--sendaudio-record-hover: var(--interactive-active);
+	--sendaudio-cancel: var(--interactive-normal);
+	--sendaudio-cancel-hover: var(--interactive-active);
+	--sendaudio-pause: var(--interactive-normal);
+	--sendaudio-pause-hover: var(--interactive-active);
+	--sendaudio-play: var(--interactive-normal);
+	--sendaudio-play-hover: var(--interactive-active);
+	--sendaudio-save: var(--interactive-normal);
+	--sendaudio-save-hover: var(--interactive-active);
+	--sendaudio-send: var(--interactive-normal);
+	--sendaudio-send-hover: var(--interactive-active);
 }
