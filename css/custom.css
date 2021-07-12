@@ -3,8 +3,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #e6ebf1;
-	background: rgb(41,55,70);
-	background: linear-gradient(90deg, rgba(41,55,70,1) 0%, rgba(17,28,38,1) 100%);
+	background: #293746;
+	background: linear-gradient(90deg, #293746 0%, #111c26 100%);
 }
 
 #main-carousel .carousel-control-prev,
