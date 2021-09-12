@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+::-webkit-scrollbar {
+    background-color: #27292b;
+    width: 0.4vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333538;
+}
+
 html, body {
 	scroll-behavior: smooth;
+	user-select: none;
 }
 
 body {
@@ -65,7 +75,7 @@ section#main img {
 	border: none;
 	border-radius: 0.4vh;
 	font-size: 1.2vh;
-	transition: opacity 0.2s;
+	transition: opacity 0.3s;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin: 0.4vh;
@@ -99,8 +109,8 @@ section#projects {
 	align-content: center;
 	justify-content: center;
 	align-items: center;
-	filter: grayscale(100%);
-	transition: filter 0.2s;
+	filter: grayscale(80%);
+	transition: filter 0.3s;
 }
 
 .project:hover {
@@ -153,12 +163,8 @@ section#contact a {
 	margin: 1.6vh 1.6vh 0 1.6vh;
 	padding-bottom: 2.0vh;
 	border-bottom: 0.2vh solid transparent;
-	transition: border-color 0.4s;
+	transition: border-color 0.3s, color 0.3s;
     text-shadow: 0 0 1.6vw rgb(13 22 27 / 75%);
-}
-
-.link:hover {
-	border-color: #f5f1ef;
 }
 
 .link.discord:hover {
