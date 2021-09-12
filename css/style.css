@@ -83,7 +83,9 @@ section#main img {
     text-shadow: 0 0 1.6vw rgb(13 22 27 / 75%);
 }
 
-.button:hover {
+.button:hover,
+.button:focus,
+.button:active {
 	opacity: 0.8;
 }
 
@@ -113,7 +115,9 @@ section#projects {
 	transition: filter 0.3s;
 }
 
-.project:hover {
+.project:hover,
+.project:focus,
+.project:active {
 	filter: grayscale(0%);
 }
 
@@ -167,32 +171,44 @@ section#contact a {
     text-shadow: 0 0 1.6vw rgb(13 22 27 / 75%);
 }
 
-.link.discord:hover {
+.link.discord:hover,
+.link.discord:focus,
+.link.discord:active {
 	color: #5865f2;
 	border-color: #5865f2;
 }
 
-.link.steam:hover {
+.link.steam:hover,
+.link.steam:focus,
+.link.steam:active {
 	color: #00adee;
 	border-color: #00adee;
 }
 
-.link.twitch:hover {
+.link.twitch:hover,
+.link.twitch:focus,
+.link.twitch:active {
 	color: #9146ff;
 	border-color: #9146ff;
 }
 
-.link.youtube:hover {
+.link.youtube:hover,
+.link.youtube:focus,
+.link.youtube:active {
 	color: #ff0000;
 	border-color: #ff0000;
 }
 
-.link.github:hover {
+.link.github:hover,
+.link.github:focus,
+.link.github:active {
 	color: #4078c0;
 	border-color: #4078c0;
 }
 
-.link.mail:hover {
+.link.mail:hover,
+.link.mail:focus,
+.link.mail:active {
 	color: #ea4335;
 	border-color: #ea4335;
 }
