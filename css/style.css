@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	background-color: #080d10;
+	color: #f5f1ef;
+	font-size: 1.6vh;
+}
+
+section {
+	width: 100.0vw;
+	height: 100.0vh;
+}
+
+section#main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+section#main img {
+	width: 12.8vh;
+	margin-bottom: 2.0vh;
+	box-shadow: 0 0 1.6vw 0 rgb(13 22 27 / 75%);
+}
+
+.texts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	font-weight: 400;
+	font-size: 3.2vh;
+    text-shadow: 0 0 1.6vw rgb(13 22 27 / 75%);
+}
+
+.text.name {
+	font-weight: 600;
+	font-size: 4.0vh;
+}
+
+.buttons {
+	margin-top: 3.2vh;
+}
+
+.button {
+	background-color: #f5f1ef;
+	color: #080d10;
+	text-decoration: none;
+	padding: 1.4vh 3.0vh;
+	border: none;
+	border-radius: 0.4vh;
+	font-size: 1.2vh;
+	transition: opacity 0.2s;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0.4vh;
+	box-shadow: 0 0 1.6vw 0 rgb(13 22 27 / 75%);
+    text-shadow: 0 0 1.6vw rgb(13 22 27 / 75%);
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+section#projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 1.6vw 0 rgb(13 22 27 / 75%);
+}
+
+.project {
+	width: 33.3vw;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #f5f1ef;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	filter: grayscale(100%);
+	transition: filter 0.2s;
+}
+
+.project:hover {
+	filter: grayscale(0%);
+}
+
+.project img {
+	width: 12.0vh;
+	margin-bottom: 2.0vh;
+}
+
+.project span {
+	font-weight: 600;
+	font-size: 3.2vh;
+}
+
+.project kbd {
+	font-size: 1.6vh;
+}
+
+.project.mcparkour {
+	background-color: rgb(255 159 0);
+	background: linear-gradient(180deg, rgb(255 231 0) 0%, rgb(255 93 0) 100%);
+}
+
+.project.cityoflights {
+	background-color: #004d5f;
+}
+
+.project.discordtv {
+	background-color: #290065;
+}
+
+section#contact {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+section#contact a {
+	text-decoration: none;
+	color: #f5f1ef;
+}
+
+.link {
+	text-align: center;
+	margin: 1.6vh 1.6vh 0 1.6vh;
+	padding-bottom: 2.0vh;
+	border-bottom: 0.2vh solid transparent;
+	transition: border-color 0.4s;
+    text-shadow: 0 0 1.6vw rgb(13 22 27 / 75%);
+}
+
+.link:hover {
+	border-color: #f5f1ef;
+}
+
+.link.discord:hover {
+	color: #5865f2;
+	border-color: #5865f2;
+}
+
+.link.steam:hover {
+	color: #00adee;
+	border-color: #00adee;
+}
+
+.link.twitch:hover {
+	color: #9146ff;
+	border-color: #9146ff;
+}
+
+.link.youtube:hover {
+	color: #ff0000;
+	border-color: #ff0000;
+}
+
+.link.github:hover {
+	color: #4078c0;
+	border-color: #4078c0;
+}
+
+.link.mail:hover {
+	color: #ea4335;
+	border-color: #ea4335;
+}
+
+.fa-icon {
+	font-size: 4.0vh;
+	padding-bottom: 1.8vh;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.6vw;
+	margin: 1.2vw;
+	color: #687379;
+}
+
+@media (max-width: 824px) {
+	.texts {
+		flex-direction: column;
+	}
+
+	section#projects {
+		flex-direction: column;
+	}
+
+	.project {
+		width: 100%;
+		height: 33.3vh;
+	}
+
+	section#contact {
+		flex-direction: column;
+	}
+}
