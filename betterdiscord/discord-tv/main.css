@@ -1148,23 +1148,6 @@ body,
 	display: none;
 }
 
-.listItem-1hlISG {
-	margin-bottom: 0;
-	padding: 5px 0;
-	width: 50px;
-}
-
-.wrapper-3NnKdC {
-	width: 50px;
-}
-
-.expandedFolderBackground-1cujaW {
-	top: 5px;
-	left: 7px;
-	bottom: 4px;
-	width: 36px;
-}
-
 .hover-2ji_A7 {
 	background-color: #444;
 }
@@ -1173,10 +1156,6 @@ body,
 .svg-1X37T1, .wrapper-25eVIn svg {
 	width: 36px;
 	height: 36px;
-}
-
-div[id*="folder-items"] {
-	height: auto !important;
 }
 
 .sidebar-2K8pFh {
@@ -1254,43 +1233,6 @@ div[id*="folder-items"] {
 .header-2V-4Sw,
 .searchBar-6Kv8R2 {
 	height: 50px;
-}
-
-.tutorialContainer-2sGCg9 {
-	height: 50px;
-	width: 50px;
-	margin-top: -50px;
-	position: fixed;
-	z-index: 2;
-	display: flex;
-	align-items: center;
-	background-color: var(--background-tertiary);
-	box-shadow: var(--shadow-bottom);
-}
-
-.tutorialContainer-2sGCg9 .wrapper-sa6paO {
-	display: none;
-}
-
-.tutorialContainer-2sGCg9 .wrapper-25eVIn,
-.tutorialContainer-2sGCg9 .wrapper-25eVIn svg {
-	width: 40px;
-	height: 40px;
-}
-
-.tutorialContainer-2sGCg9 .wrapper-1BJsBx {
-	width: 100%;
-	height: 100%;
-	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' overflow='visible' width='40px' height='40px' version='1.1' viewBox='0 0 40 40' x='0px' y='0px'%3E%3Cpolygon xmlns='http://www.w3.org/2000/svg' points='13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8' fill='%239147ff'/%3E%3Cpolygon xmlns='http://www.w3.org/2000/svg' points='26 25 30 21 30 10 14 10 14 25 18 25 18 29 22 25' fill='%23fff'/%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='M20,14 L22,14 L22,20 L20,20 L20,14 Z M27,14 L27,20 L25,20 L25,14 L27,14 Z' fill='%239147ff'/%3E%3C/svg%3E") center/contain no-repeat;
-}
-
-.tutorialContainer-2sGCg9 .listItem-2P_4kh {
-	padding: 0;
-	width: 100%;
-}
-
-.tutorialContainer-2sGCg9 .childWrapper-anI2G9 {
-	display: none;
 }
 
 .guildSeparator-33mFX6 {
@@ -1542,7 +1484,12 @@ div[id*="folder-items"] {
 
 .channelHeader-3Gd2xq {
 	padding-right: 16px;
+	padding-left: 32px;
 	background-color: var(--background-primary);
+}
+
+.collapseButton-2ZsEjz {
+	left: 6px;
 }
 
 .messageContainer-gbhlwo {
@@ -1558,30 +1505,30 @@ div[id*="folder-items"] {
 	color: var(--color-brand);
 }
 
+.scroller-zPkAnE {
+	margin-right: 0;
+}
+
+.friendWrapper-2SrUFF {
+	margin: 0 12px;
+}
+
 /* Discord: Add server / Explore */
-.circleIconButton-1XqULR {
+.circleIconButton-hZmpE8 {
 	color: var(--color-green);
 }
 
-.circleIconButton-1XqULR.selected-2jcQaY {
+.circleIconButton-hZmpE8.selected-2jcQaY {
 	background-color: var(--color-green);
 }
 
 /* Discord: Checkbox */
-.container-3auIfb[style*="background-color: hsl("] {
+.container-3auIfb[style*="background-color: hsl(139"] {
 	background-color: var(--color-brand) !important;
 }
 
-.slider-TkfMQL path[fill*="hsl("] {
+.slider-TkfMQL path[fill*="hsl(139"] {
 	fill: var(--color-brand) !important;
-}
-
-.container-3auIfb[style*="background-color: hsl(114"] {
-	background-color: #3e3e40 !important;
-}
-
-.slider-TkfMQL path[fill*="hsl(1"] {
-	fill: #3e3e40 !important;
 }
 
 /* Discord: My Account: Status */
@@ -1595,6 +1542,32 @@ div[id*="folder-items"] {
 
 .avatar-1uQSZT svg rect[fill="#ED4245"] {
 	fill: var(--color-red);
+}
+
+/* Discord: Guild list */
+.listItem-2Ig28I {
+	margin-bottom: 0;
+	padding: 5px 0;
+	width: 50px;
+}
+
+.wrapper-shyHJt {
+	width: 50px;
+}
+
+.guilds-1SWlCJ {
+	width: 50px;
+}
+
+.expandedFolderBackground-3ZDF05 {
+	top: 5px;
+	left: 7px;
+	bottom: 4px;
+	width: 36px;
+}
+
+ul[id*="folder-items"] {
+	height: auto !important;
 }
 
 /* Discord: Speaking ring */
@@ -1621,6 +1594,44 @@ div[id*="folder-items"] {
 /* Discord: Speaking ring: Voice users */
 .speaking-3dBKhR {
 	box-shadow: inset 0 0 0 2px var(--color-green), inset 0 0 0 3px var(--background-secondary)
+}
+
+/* Discord: Home icon */
+.tutorialContainer-11ICd5 {
+	height: 50px;
+	width: 50px;
+	margin-top: -50px;
+	position: fixed;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	background-color: var(--background-tertiary);
+	box-shadow: var(--shadow-bottom);
+}
+
+.tutorialContainer-11ICd5 .wrapper-sa6paO {
+	display: none;
+}
+
+.tutorialContainer-11ICd5 .wrapper-25eVIn,
+.tutorialContainer-11ICd5 .wrapper-25eVIn svg {
+	width: 40px;
+	height: 40px;
+}
+
+.tutorialContainer-11ICd5 .wrapper-1BJsBx {
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' overflow='visible' width='40px' height='40px' version='1.1' viewBox='0 0 40 40' x='0px' y='0px'%3E%3Cpolygon xmlns='http://www.w3.org/2000/svg' points='13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8' fill='%239147ff'/%3E%3Cpolygon xmlns='http://www.w3.org/2000/svg' points='26 25 30 21 30 10 14 10 14 25 18 25 18 29 22 25' fill='%23fff'/%3E%3Cpath xmlns='http://www.w3.org/2000/svg' d='M20,14 L22,14 L22,20 L20,20 L20,14 Z M27,14 L27,20 L25,20 L25,14 L27,14 Z' fill='%239147ff'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+
+.tutorialContainer-11ICd5 .listItem-2P_4kh {
+	padding: 0;
+	width: 100%;
+}
+
+.tutorialContainer-11ICd5 .childWrapper-anI2G9 {
+	display: none;
 }
 
 /* BetterDiscord: Settings: Buttons and switches */
@@ -1756,7 +1767,7 @@ div[id*="folder-items"] {
 	border-bottom: 2px solid var(--color-brand);
 }
 
-.channelTabs-unreadBadge {
+.channelTabs-unreadBadge  {
 	background-color: var(--color-brand);
 }
 
