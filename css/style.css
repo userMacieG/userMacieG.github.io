@@ -148,6 +148,10 @@ section#projects {
 	background-color: #290065;
 }
 
+.project.reective {
+	background-color: #2c2938;
+}
+
 section#contact {
 	display: flex;
 	flex-direction: row;
