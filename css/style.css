@@ -152,6 +152,10 @@ section#projects {
 	background-color: #2c2938;
 }
 
+.project.lorewave {
+	background-color: #357266;
+}
+
 section#contact {
 	display: flex;
 	flex-direction: row;
